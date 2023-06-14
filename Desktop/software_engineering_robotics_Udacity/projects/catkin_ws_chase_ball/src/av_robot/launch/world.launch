@@ -1,6 +1,6 @@
 <launch>
 
-    <arg name="world_file" default="$(find av_robot)/worlds/empty.world"/>
+    <arg name="world_file" default="$(find av_robot)/worlds/my_world.world"/>
 
     <!-- Robot pose -->
     <arg name="x" default="0"/>

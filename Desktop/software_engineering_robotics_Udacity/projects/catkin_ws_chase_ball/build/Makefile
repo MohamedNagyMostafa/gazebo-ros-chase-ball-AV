@@ -665,6 +665,19 @@ drive_bot/fast:
 	$(MAKE) $(MAKESILENT) -f ball_chaser/CMakeFiles/drive_bot.dir/build.make ball_chaser/CMakeFiles/drive_bot.dir/build
 .PHONY : drive_bot/fast
 
+#=============================================================================
+# Target rules for targets named process_image
+
+# Build rule for target.
+process_image: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 process_image
+.PHONY : process_image
+
+# fast build rule for target.
+process_image/fast:
+	$(MAKE) $(MAKESILENT) -f ball_chaser/CMakeFiles/process_image.dir/build.make ball_chaser/CMakeFiles/process_image.dir/build
+.PHONY : process_image/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -716,6 +729,7 @@ help:
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... process_image"
 .PHONY : help
 
 

@@ -106,6 +106,7 @@ av_robot/clean: av_robot/CMakeFiles/_catkin_empty_exported_target.dir/clean
 # Recursive "all" directory target.
 ball_chaser/all: ball_chaser/CMakeFiles/ball_chaser_generate_messages.dir/all
 ball_chaser/all: ball_chaser/CMakeFiles/drive_bot.dir/all
+ball_chaser/all: ball_chaser/CMakeFiles/process_image.dir/all
 .PHONY : ball_chaser/all
 
 # Recursive "preinstall" directory target.
@@ -141,6 +142,7 @@ ball_chaser/clean: ball_chaser/CMakeFiles/ball_chaser_gennodejs.dir/clean
 ball_chaser/clean: ball_chaser/CMakeFiles/ball_chaser_generate_messages_py.dir/clean
 ball_chaser/clean: ball_chaser/CMakeFiles/ball_chaser_genpy.dir/clean
 ball_chaser/clean: ball_chaser/CMakeFiles/drive_bot.dir/clean
+ball_chaser/clean: ball_chaser/CMakeFiles/process_image.dir/clean
 .PHONY : ball_chaser/clean
 
 #=============================================================================
@@ -1188,6 +1190,32 @@ drive_bot: ball_chaser/CMakeFiles/drive_bot.dir/rule
 ball_chaser/CMakeFiles/drive_bot.dir/clean:
 	$(MAKE) $(MAKESILENT) -f ball_chaser/CMakeFiles/drive_bot.dir/build.make ball_chaser/CMakeFiles/drive_bot.dir/clean
 .PHONY : ball_chaser/CMakeFiles/drive_bot.dir/clean
+
+#=============================================================================
+# Target rules for target ball_chaser/CMakeFiles/process_image.dir
+
+# All Build rule for target.
+ball_chaser/CMakeFiles/process_image.dir/all: ball_chaser/CMakeFiles/ball_chaser_generate_messages_cpp.dir/all
+	$(MAKE) $(MAKESILENT) -f ball_chaser/CMakeFiles/process_image.dir/build.make ball_chaser/CMakeFiles/process_image.dir/depend
+	$(MAKE) $(MAKESILENT) -f ball_chaser/CMakeFiles/process_image.dir/build.make ball_chaser/CMakeFiles/process_image.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/build/CMakeFiles --progress-num=18,19 "Built target process_image"
+.PHONY : ball_chaser/CMakeFiles/process_image.dir/all
+
+# Build rule for subdir invocation for target.
+ball_chaser/CMakeFiles/process_image.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ball_chaser/CMakeFiles/process_image.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/build/CMakeFiles 0
+.PHONY : ball_chaser/CMakeFiles/process_image.dir/rule
+
+# Convenience name for target.
+process_image: ball_chaser/CMakeFiles/process_image.dir/rule
+.PHONY : process_image
+
+# clean rule for target.
+ball_chaser/CMakeFiles/process_image.dir/clean:
+	$(MAKE) $(MAKESILENT) -f ball_chaser/CMakeFiles/process_image.dir/build.make ball_chaser/CMakeFiles/process_image.dir/clean
+.PHONY : ball_chaser/CMakeFiles/process_image.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

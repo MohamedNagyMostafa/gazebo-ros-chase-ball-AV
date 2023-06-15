@@ -273,6 +273,41 @@ build devel/lib/ball_chaser/drive_bot: CXX_EXECUTABLE_LINKER__drive_bot_Debug CM
   TARGET_FILE = devel/lib/ball_chaser/drive_bot
   TARGET_PDB = drive_bot.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target process_image
+
+
+#############################################
+# Order-only phony target for process_image
+
+build cmake_object_order_depends_target_process_image: phony || ball_chaser_generate_messages_cpp
+
+build CMakeFiles/process_image.dir/src/process_image.cpp.o: CXX_COMPILER__process_image_Debug /home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/src/ball_chaser/src/process_image.cpp || cmake_object_order_depends_target_process_image
+  DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"ball_chaser\"
+  DEP_FILE = CMakeFiles/process_image.dir/src/process_image.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=c++11
+  INCLUDES = -I/home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/src/ball_chaser/cmake-build-debug/devel/include -I/home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/src/ball_chaser/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp
+  OBJECT_DIR = CMakeFiles/process_image.dir
+  OBJECT_FILE_DIR = CMakeFiles/process_image.dir/src
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target process_image
+
+
+#############################################
+# Link the executable devel/lib/ball_chaser/process_image
+
+build devel/lib/ball_chaser/process_image: CXX_EXECUTABLE_LINKER__process_image_Debug CMakeFiles/process_image.dir/src/process_image.cpp.o | /opt/ros/noetic/lib/libroscpp.so /usr/lib/x86_64-linux-gnu/libpthread.so /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0 /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0 /opt/ros/noetic/lib/librosconsole.so /opt/ros/noetic/lib/librosconsole_log4cxx.so /opt/ros/noetic/lib/librosconsole_backend_interface.so /usr/lib/x86_64-linux-gnu/liblog4cxx.so /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0 /opt/ros/noetic/lib/libxmlrpcpp.so /opt/ros/noetic/lib/libroscpp_serialization.so /opt/ros/noetic/lib/librostime.so /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0 /opt/ros/noetic/lib/libcpp_common.so /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0 /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4 || ball_chaser_generate_messages_cpp
+  FLAGS = -g
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = -Wl,-rpath,/opt/ros/noetic/lib  /opt/ros/noetic/lib/libroscpp.so  -lpthread  /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0  /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0  /opt/ros/noetic/lib/librosconsole.so  /opt/ros/noetic/lib/librosconsole_log4cxx.so  /opt/ros/noetic/lib/librosconsole_backend_interface.so  -llog4cxx  /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0  /opt/ros/noetic/lib/libxmlrpcpp.so  /opt/ros/noetic/lib/libroscpp_serialization.so  /opt/ros/noetic/lib/librostime.so  /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0  /opt/ros/noetic/lib/libcpp_common.so  /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0  /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0  /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+  OBJECT_DIR = CMakeFiles/process_image.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = devel/lib/ball_chaser/process_image
+  TARGET_PDB = process_image.dbg
+
 
 #############################################
 # Utility command for test
@@ -868,6 +903,8 @@ build libgtest_maind.so: phony gtest/lib/libgtest_maind.so
 
 build libgtestd.so: phony gtest/lib/libgtestd.so
 
+build process_image: phony devel/lib/ball_chaser/process_image
+
 # =============================================================================
 # Folder targets.
 
@@ -876,7 +913,7 @@ build libgtestd.so: phony gtest/lib/libgtestd.so
 #############################################
 # Folder: /home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/src/ball_chaser/cmake-build-debug
 
-build all: phony ball_chaser_generate_messages devel/lib/ball_chaser/drive_bot gtest/all
+build all: phony ball_chaser_generate_messages devel/lib/ball_chaser/drive_bot devel/lib/ball_chaser/process_image gtest/all
 
 # =============================================================================
 

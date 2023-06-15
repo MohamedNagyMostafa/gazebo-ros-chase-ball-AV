@@ -32,6 +32,7 @@
 /home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/src/ball_chaser/cmake-build-debug/CMakeFiles/ball_chaser_generate_messages_py.dir
 /home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/src/ball_chaser/cmake-build-debug/CMakeFiles/ball_chaser_genpy.dir
 /home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/src/ball_chaser/cmake-build-debug/CMakeFiles/drive_bot.dir
+/home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/src/ball_chaser/cmake-build-debug/CMakeFiles/process_image.dir
 /home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/src/ball_chaser/cmake-build-debug/CMakeFiles/test.dir
 /home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/src/ball_chaser/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/src/ball_chaser/cmake-build-debug/CMakeFiles/rebuild_cache.dir

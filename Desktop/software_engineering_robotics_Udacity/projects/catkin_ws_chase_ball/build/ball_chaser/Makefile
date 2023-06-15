@@ -563,6 +563,20 @@ drive_bot/fast:
 	cd /home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/build && $(MAKE) $(MAKESILENT) -f ball_chaser/CMakeFiles/drive_bot.dir/build.make ball_chaser/CMakeFiles/drive_bot.dir/build
 .PHONY : drive_bot/fast
 
+# Convenience name for target.
+ball_chaser/CMakeFiles/process_image.dir/rule:
+	cd /home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ball_chaser/CMakeFiles/process_image.dir/rule
+.PHONY : ball_chaser/CMakeFiles/process_image.dir/rule
+
+# Convenience name for target.
+process_image: ball_chaser/CMakeFiles/process_image.dir/rule
+.PHONY : process_image
+
+# fast build rule for target.
+process_image/fast:
+	cd /home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/build && $(MAKE) $(MAKESILENT) -f ball_chaser/CMakeFiles/process_image.dir/build.make ball_chaser/CMakeFiles/process_image.dir/build
+.PHONY : process_image/fast
+
 src/drive_bot.o: src/drive_bot.cpp.o
 .PHONY : src/drive_bot.o
 
@@ -586,6 +600,30 @@ src/drive_bot.s: src/drive_bot.cpp.s
 src/drive_bot.cpp.s:
 	cd /home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/build && $(MAKE) $(MAKESILENT) -f ball_chaser/CMakeFiles/drive_bot.dir/build.make ball_chaser/CMakeFiles/drive_bot.dir/src/drive_bot.cpp.s
 .PHONY : src/drive_bot.cpp.s
+
+src/process_image.o: src/process_image.cpp.o
+.PHONY : src/process_image.o
+
+# target to build an object file
+src/process_image.cpp.o:
+	cd /home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/build && $(MAKE) $(MAKESILENT) -f ball_chaser/CMakeFiles/process_image.dir/build.make ball_chaser/CMakeFiles/process_image.dir/src/process_image.cpp.o
+.PHONY : src/process_image.cpp.o
+
+src/process_image.i: src/process_image.cpp.i
+.PHONY : src/process_image.i
+
+# target to preprocess a source file
+src/process_image.cpp.i:
+	cd /home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/build && $(MAKE) $(MAKESILENT) -f ball_chaser/CMakeFiles/process_image.dir/build.make ball_chaser/CMakeFiles/process_image.dir/src/process_image.cpp.i
+.PHONY : src/process_image.cpp.i
+
+src/process_image.s: src/process_image.cpp.s
+.PHONY : src/process_image.s
+
+# target to generate assembly for a file
+src/process_image.cpp.s:
+	cd /home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/build && $(MAKE) $(MAKESILENT) -f ball_chaser/CMakeFiles/process_image.dir/build.make ball_chaser/CMakeFiles/process_image.dir/src/process_image.cpp.s
+.PHONY : src/process_image.cpp.s
 
 # Help Target
 help:
@@ -628,9 +666,13 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... drive_bot"
+	@echo "... process_image"
 	@echo "... src/drive_bot.o"
 	@echo "... src/drive_bot.i"
 	@echo "... src/drive_bot.s"
+	@echo "... src/process_image.o"
+	@echo "... src/process_image.i"
+	@echo "... src/process_image.s"
 .PHONY : help
 
 

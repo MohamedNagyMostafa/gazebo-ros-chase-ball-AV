@@ -1,0 +1,8 @@
+prefix=/home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/install
+
+Name: ball_chaser
+Description: Description of ball_chaser
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

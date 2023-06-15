@@ -1,2 +1,2 @@
-av_robot
+av_robot:ball_chaser
 -DCATKIN_DEVEL_PREFIX=/home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/devel -DCMAKE_INSTALL_PREFIX=/home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/install -G Unix Makefiles

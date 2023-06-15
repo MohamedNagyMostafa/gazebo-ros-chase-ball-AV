@@ -137,6 +137,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/build/gtest/cmake_install.cmake")
   include("/home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/build/av_robot/cmake_install.cmake")
+  include("/home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/build/ball_chaser/cmake_install.cmake")
 
 endif()
 

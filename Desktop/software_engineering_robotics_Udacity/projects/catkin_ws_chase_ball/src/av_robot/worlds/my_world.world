@@ -2971,28 +2971,28 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='robot'>
-        <pose>0.111329 0.285985 0.199999 -2e-06 0.003278 0.032556</pose>
-        <scale>1 1 1</scale>
-        <link name='left_wheel'>
-          <pose>0.101565 0.585811 0.2 -1.7e-05 0.029443 0.032556</pose>
-          <velocity>0.0001 4.9e-05 -1e-06 3.2e-05 0.000509 1e-06</velocity>
-          <acceleration>0.081663 0.002497 -1e-06 -0.013262 0.408296 -7.1e-05</acceleration>
-          <wrench>0.040831 0.001248 -0 0 -0 0</wrench>
-        </link>
-        <link name='right_wheel'>
-          <pose>0.121094 -0.01384 0.2 1.7e-05 0.026352 0.032557</pose>
-          <velocity>0.000103 -4.2e-05 -1e-06 -6.6e-05 0.000509 1e-06</velocity>
-          <acceleration>0.081655 0.0028 0 -0.013225 0.408298 -1.8e-05</acceleration>
-          <wrench>0.040828 0.0014 0 0 -0 0</wrench>
-        </link>
-        <link name='robot_footprint'>
-          <pose>0.111329 0.285985 0.199999 -2e-06 0.003278 0.032556</pose>
-          <velocity>0.000101 4e-06 2e-06 -1e-05 0.000538 0</velocity>
-          <acceleration>0.081604 0.00261 -0.001248 -0.011028 0.408313 -3.2e-05</acceleration>
-          <wrench>1.23222 0.039412 -0.018848 0 -0 0</wrench>
-        </link>
-      </model>
+<!--      <model name='robot'>-->
+<!--        <pose>0.111329 0.285985 0.199999 -2e-06 0.003278 0.032556</pose>-->
+<!--        <scale>1 1 1</scale>-->
+<!--        <link name='left_wheel'>-->
+<!--          <pose>0.101565 0.585811 0.2 -1.7e-05 0.029443 0.032556</pose>-->
+<!--          <velocity>0.0001 4.9e-05 -1e-06 3.2e-05 0.000509 1e-06</velocity>-->
+<!--          <acceleration>0.081663 0.002497 -1e-06 -0.013262 0.408296 -7.1e-05</acceleration>-->
+<!--          <wrench>0.040831 0.001248 -0 0 -0 0</wrench>-->
+<!--        </link>-->
+<!--        <link name='right_wheel'>-->
+<!--          <pose>0.121094 -0.01384 0.2 1.7e-05 0.026352 0.032557</pose>-->
+<!--          <velocity>0.000103 -4.2e-05 -1e-06 -6.6e-05 0.000509 1e-06</velocity>-->
+<!--          <acceleration>0.081655 0.0028 0 -0.013225 0.408298 -1.8e-05</acceleration>-->
+<!--          <wrench>0.040828 0.0014 0 0 -0 0</wrench>-->
+<!--        </link>-->
+<!--        <link name='robot_footprint'>-->
+<!--          <pose>0.111329 0.285985 0.199999 -2e-06 0.003278 0.032556</pose>-->
+<!--          <velocity>0.000101 4e-06 2e-06 -1e-05 0.000538 0</velocity>-->
+<!--          <acceleration>0.081604 0.00261 -0.001248 -0.011028 0.408313 -3.2e-05</acceleration>-->
+<!--          <wrench>1.23222 0.039412 -0.018848 0 -0 0</wrench>-->
+<!--        </link>-->
+<!--      </model>-->
       <model name='white_ball'>
         <pose>0.839755 -8.63359 0.1 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -3014,435 +3014,435 @@
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
-    <model name='robot'>
-      <link name='robot_footprint'>
-        <inertial>
-          <pose>0.002649 0 0 0 -0 0</pose>
-          <mass>15.1</mass>
-          <inertia>
-            <ixx>0.100002</ixx>
-            <ixy>0</ixy>
-            <ixz>-1.47351e-07</ixz>
-            <iyy>0.115896</iyy>
-            <iyz>0</iyz>
-            <izz>0.115896</izz>
-          </inertia>
-        </inertial>
-        <collision name='robot_footprint_fixed_joint_lump__collision_collision'>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <box>
-              <size>0.8 0.4 0.2</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <collision name='robot_footprint_fixed_joint_lump__back_caster_collision_collision_1'>
-          <pose>-0.3 0 -0.05 0 -0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>0.099</radius>
-            </sphere>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <collision name='robot_footprint_fixed_joint_lump__front_caster_collision_collision_2'>
-          <pose>0.3 0 -0.1 0 -0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>0.099</radius>
-            </sphere>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <collision name='robot_footprint_fixed_joint_lump__camera_collision_collision_3'>
-          <pose>0.4 0 0 0 -0 0</pose>
-          <geometry>
-            <box>
-              <size>0.05 0.05 0.05</size>
-            </box>
-          </geometry>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <friction>
-              <ode/>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <collision name='robot_footprint_fixed_joint_lump__hokuyo_collision_collision_4'>
-          <pose>0.15 0 0.1 0 -0 0</pose>
-          <geometry>
-            <box>
-              <size>0.1 0.1 0.1</size>
-            </box>
-          </geometry>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <friction>
-              <ode/>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='robot_footprint_fixed_joint_lump__chassis_visual_visual'>
-          <pose>0 0 0 0 -0 0</pose>
-          <geometry>
-            <box>
-              <size>0.8 0.4 0.2</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Red</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <visual name='robot_footprint_fixed_joint_lump__back_caster_visual_visual_1'>
-          <pose>-0.3 0 -0.1 0 -0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>0.1</radius>
-            </sphere>
-          </geometry>
-        </visual>
-        <visual name='robot_footprint_fixed_joint_lump__front_caster_visual_visual_2'>
-          <pose>0.3 0 -0.1 0 -0 0</pose>
-          <geometry>
-            <sphere>
-              <radius>0.1</radius>
-            </sphere>
-          </geometry>
-        </visual>
-        <visual name='robot_footprint_fixed_joint_lump__camera_visual_visual_3'>
-          <pose>0.4 0 0 0 -0 0</pose>
-          <geometry>
-            <box>
-              <size>0.05 0.05 0.05</size>
-            </box>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Blue</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <visual name='robot_footprint_fixed_joint_lump__hokuyo_visual_visual_4'>
-          <pose>0.15 0 0.1 0 -0 0</pose>
-          <geometry>
-            <mesh>
-              <scale>1 1 1</scale>
-              <uri>/home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/src/av_robot/meshes/hokuyo.dae</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <sensor name='camera1' type='camera'>
-          <update_rate>30</update_rate>
-          <camera name='head'>
-            <horizontal_fov>1.39626</horizontal_fov>
-            <image>
-              <width>800</width>
-              <height>800</height>
-              <format>R8G8B8</format>
-            </image>
-            <clip>
-              <near>0.02</near>
-              <far>300</far>
-            </clip>
-          </camera>
-          <plugin name='camera_controller' filename='libgazebo_ros_camera.so'>
-            <alwaysOn>1</alwaysOn>
-            <updateRate>0.0</updateRate>
-            <cameraName>camera</cameraName>
-            <imageTopicName>rgb/image_raw</imageTopicName>
-            <cameraInfoTopicName>rgb/camera_info</cameraInfoTopicName>
-            <frameName>camera</frameName>
-            <hackBaseline>0.07</hackBaseline>
-            <distortionK1>0.0</distortionK1>
-            <distortionK2>0.0</distortionK2>
-            <distortionK3>0.0</distortionK3>
-            <distortionT1>0.0</distortionT1>
-            <distortionT2>0.0</distortionT2>
-            <robotNamespace>/</robotNamespace>
-          </plugin>
-          <pose>0.4 0 0 0 -0 0</pose>
-        </sensor>
-        <sensor name='head_hokuyo_sensor' type='ray'>
-          <visualize>0</visualize>
-          <update_rate>40</update_rate>
-          <ray>
-            <scan>
-              <horizontal>
-                <samples>720</samples>
-                <resolution>1</resolution>
-                <min_angle>-1.5708</min_angle>
-                <max_angle>1.5708</max_angle>
-              </horizontal>
-              <vertical>
-                <samples>1</samples>
-                <min_angle>0</min_angle>
-                <max_angle>0</max_angle>
-              </vertical>
-            </scan>
-            <range>
-              <min>0.1</min>
-              <max>30</max>
-              <resolution>0.01</resolution>
-            </range>
-            <noise>
-              <type>gaussian</type>
-              <mean>0</mean>
-              <stddev>0.01</stddev>
-            </noise>
-          </ray>
-          <plugin name='gazebo_ros_head_hokuyo_controller' filename='libgazebo_ros_laser.so'>
-            <topicName>/scan</topicName>
-            <frameName>hokuyo</frameName>
-            <robotNamespace>/</robotNamespace>
-          </plugin>
-          <pose>0.15 0 0.1 0 -0 0</pose>
-        </sensor>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <joint name='left_wheel_hinge' type='revolute'>
-        <pose relative_to='robot_footprint'>0 0.3 0 0 -0 0</pose>
-        <parent>robot_footprint</parent>
-        <child>left_wheel</child>
-        <axis>
-          <xyz>0 1 0</xyz>
-          <limit>
-            <effort>10000</effort>
-            <velocity>1000</velocity>
-            <lower>-1e+16</lower>
-            <upper>1e+16</upper>
-          </limit>
-          <dynamics>
-            <damping>1</damping>
-            <friction>1</friction>
-            <spring_reference>0</spring_reference>
-            <spring_stiffness>0</spring_stiffness>
-          </dynamics>
-        </axis>
-      </joint>
-      <link name='left_wheel'>
-        <pose relative_to='left_wheel_hinge'>0 0 0 0 -0 0</pose>
-        <inertial>
-          <pose>0 0 0 -0 1.5707 1.5707</pose>
-          <mass>0.5</mass>
-          <inertia>
-            <ixx>0.1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.1</iyy>
-            <iyz>0</iyz>
-            <izz>0.1</izz>
-          </inertia>
-        </inertial>
-        <collision name='left_wheel_collision_collision'>
-          <pose>0 0 0 1.57089 1.57079 -3.14159</pose>
-          <geometry>
-            <cylinder>
-              <length>0.05</length>
-              <radius>0.2</radius>
-            </cylinder>
-          </geometry>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <friction>
-              <ode/>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='left_wheel_visual_visual'>
-          <pose>0 0 0 1.57089 1.57079 -3.14159</pose>
-          <geometry>
-            <cylinder>
-              <length>0.05</length>
-              <radius>0.2</radius>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Orange</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <joint name='right_wheel_hinge' type='revolute'>
-        <pose relative_to='robot_footprint'>0 -0.3 0 0 -0 0</pose>
-        <parent>robot_footprint</parent>
-        <child>right_wheel</child>
-        <axis>
-          <xyz>0 1 0</xyz>
-          <limit>
-            <effort>10000</effort>
-            <velocity>1000</velocity>
-            <lower>-1e+16</lower>
-            <upper>1e+16</upper>
-          </limit>
-          <dynamics>
-            <damping>1</damping>
-            <friction>1</friction>
-            <spring_reference>0</spring_reference>
-            <spring_stiffness>0</spring_stiffness>
-          </dynamics>
-        </axis>
-      </joint>
-      <link name='right_wheel'>
-        <pose relative_to='right_wheel_hinge'>0 0 0 0 -0 0</pose>
-        <inertial>
-          <pose>0 0 0 -0 1.5707 1.5707</pose>
-          <mass>0.5</mass>
-          <inertia>
-            <ixx>0.1</ixx>
-            <ixy>0</ixy>
-            <ixz>0</ixz>
-            <iyy>0.1</iyy>
-            <iyz>0</iyz>
-            <izz>0.1</izz>
-          </inertia>
-        </inertial>
-        <collision name='right_wheel_collision_collision'>
-          <pose>0 0 0 1.57089 1.57079 -3.14159</pose>
-          <geometry>
-            <cylinder>
-              <length>0.05</length>
-              <radius>0.2</radius>
-            </cylinder>
-          </geometry>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <friction>
-              <ode/>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='right_wheel_visual_visual'>
-          <pose>0 0 0 1.57089 1.57079 -3.14159</pose>
-          <geometry>
-            <cylinder>
-              <length>0.05</length>
-              <radius>0.2</radius>
-            </cylinder>
-          </geometry>
-          <material>
-            <script>
-              <name>Gazebo/Orange</name>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <plugin name='differential_drive_controller' filename='libgazebo_ros_diff_drive.so'>
-        <legacyMode>0</legacyMode>
-        <alwaysOn>1</alwaysOn>
-        <updateRate>10</updateRate>
-        <leftJoint>left_wheel_hinge</leftJoint>
-        <rightJoint>right_wheel_hinge</rightJoint>
-        <wheelSeparation>0.4</wheelSeparation>
-        <wheelDiameter>0.2</wheelDiameter>
-        <torque>10</torque>
-        <commandTopic>cmd_vel</commandTopic>
-        <odometryTopic>odom</odometryTopic>
-        <odometryFrame>odom</odometryFrame>
-        <robotBaseFrame>robot_footprint</robotBaseFrame>
-        <publishWheelTF>0</publishWheelTF>
-        <publishWheelJointState>0</publishWheelJointState>
-        <rosDebugLevel>na</rosDebugLevel>
-        <wheelAcceleration>0</wheelAcceleration>
-        <wheelTorque>5</wheelTorque>
-        <odometrySource>world</odometrySource>
-        <publishTf>1</publishTf>
-        <publishOdomTF>1</publishOdomTF>
-        <robotNamespace>/</robotNamespace>
-      </plugin>
-      <frame name='camera_joint' attached_to='chassis'>
-        <pose>0.4 0 0 0 -0 0</pose>
-      </frame>
-      <frame name='camera' attached_to='camera_joint'/>
-      <frame name='hokuyo_joint' attached_to='chassis'>
-        <pose>0.15 0 0.1 0 -0 0</pose>
-      </frame>
-      <frame name='hokuyo' attached_to='hokuyo_joint'/>
-      <frame name='robot_footprint_joint' attached_to='robot_footprint'>
-        <pose>0 0 0 0 -0 0</pose>
-      </frame>
-      <frame name='chassis' attached_to='robot_footprint_joint'/>
-      <pose>0 0 0 0 -0 0</pose>
-    </model>
+<!--    <model name='robot'>-->
+<!--      <link name='robot_footprint'>-->
+<!--        <inertial>-->
+<!--          <pose>0.002649 0 0 0 -0 0</pose>-->
+<!--          <mass>15.1</mass>-->
+<!--          <inertia>-->
+<!--            <ixx>0.100002</ixx>-->
+<!--            <ixy>0</ixy>-->
+<!--            <ixz>-1.47351e-07</ixz>-->
+<!--            <iyy>0.115896</iyy>-->
+<!--            <iyz>0</iyz>-->
+<!--            <izz>0.115896</izz>-->
+<!--          </inertia>-->
+<!--        </inertial>-->
+<!--        <collision name='robot_footprint_fixed_joint_lump__collision_collision'>-->
+<!--          <pose>0 0 0 0 -0 0</pose>-->
+<!--          <geometry>-->
+<!--            <box>-->
+<!--              <size>0.8 0.4 0.2</size>-->
+<!--            </box>-->
+<!--          </geometry>-->
+<!--          <max_contacts>10</max_contacts>-->
+<!--          <surface>-->
+<!--            <contact>-->
+<!--              <ode/>-->
+<!--            </contact>-->
+<!--            <bounce/>-->
+<!--            <friction>-->
+<!--              <torsional>-->
+<!--                <ode/>-->
+<!--              </torsional>-->
+<!--              <ode/>-->
+<!--            </friction>-->
+<!--          </surface>-->
+<!--        </collision>-->
+<!--        <collision name='robot_footprint_fixed_joint_lump__back_caster_collision_collision_1'>-->
+<!--          <pose>-0.3 0 -0.05 0 -0 0</pose>-->
+<!--          <geometry>-->
+<!--            <sphere>-->
+<!--              <radius>0.099</radius>-->
+<!--            </sphere>-->
+<!--          </geometry>-->
+<!--          <max_contacts>10</max_contacts>-->
+<!--          <surface>-->
+<!--            <contact>-->
+<!--              <ode/>-->
+<!--            </contact>-->
+<!--            <bounce/>-->
+<!--            <friction>-->
+<!--              <torsional>-->
+<!--                <ode/>-->
+<!--              </torsional>-->
+<!--              <ode/>-->
+<!--            </friction>-->
+<!--          </surface>-->
+<!--        </collision>-->
+<!--        <collision name='robot_footprint_fixed_joint_lump__front_caster_collision_collision_2'>-->
+<!--          <pose>0.3 0 -0.1 0 -0 0</pose>-->
+<!--          <geometry>-->
+<!--            <sphere>-->
+<!--              <radius>0.099</radius>-->
+<!--            </sphere>-->
+<!--          </geometry>-->
+<!--          <max_contacts>10</max_contacts>-->
+<!--          <surface>-->
+<!--            <contact>-->
+<!--              <ode/>-->
+<!--            </contact>-->
+<!--            <bounce/>-->
+<!--            <friction>-->
+<!--              <torsional>-->
+<!--                <ode/>-->
+<!--              </torsional>-->
+<!--              <ode/>-->
+<!--            </friction>-->
+<!--          </surface>-->
+<!--        </collision>-->
+<!--        <collision name='robot_footprint_fixed_joint_lump__camera_collision_collision_3'>-->
+<!--          <pose>0.4 0 0 0 -0 0</pose>-->
+<!--          <geometry>-->
+<!--            <box>-->
+<!--              <size>0.05 0.05 0.05</size>-->
+<!--            </box>-->
+<!--          </geometry>-->
+<!--          <surface>-->
+<!--            <contact>-->
+<!--              <ode/>-->
+<!--            </contact>-->
+<!--            <friction>-->
+<!--              <ode/>-->
+<!--              <torsional>-->
+<!--                <ode/>-->
+<!--              </torsional>-->
+<!--            </friction>-->
+<!--            <bounce/>-->
+<!--          </surface>-->
+<!--          <max_contacts>10</max_contacts>-->
+<!--        </collision>-->
+<!--        <collision name='robot_footprint_fixed_joint_lump__hokuyo_collision_collision_4'>-->
+<!--          <pose>0.15 0 0.1 0 -0 0</pose>-->
+<!--          <geometry>-->
+<!--            <box>-->
+<!--              <size>0.1 0.1 0.1</size>-->
+<!--            </box>-->
+<!--          </geometry>-->
+<!--          <surface>-->
+<!--            <contact>-->
+<!--              <ode/>-->
+<!--            </contact>-->
+<!--            <friction>-->
+<!--              <ode/>-->
+<!--              <torsional>-->
+<!--                <ode/>-->
+<!--              </torsional>-->
+<!--            </friction>-->
+<!--            <bounce/>-->
+<!--          </surface>-->
+<!--          <max_contacts>10</max_contacts>-->
+<!--        </collision>-->
+<!--        <visual name='robot_footprint_fixed_joint_lump__chassis_visual_visual'>-->
+<!--          <pose>0 0 0 0 -0 0</pose>-->
+<!--          <geometry>-->
+<!--            <box>-->
+<!--              <size>0.8 0.4 0.2</size>-->
+<!--            </box>-->
+<!--          </geometry>-->
+<!--          <material>-->
+<!--            <script>-->
+<!--              <name>Gazebo/Red</name>-->
+<!--              <uri>file://media/materials/scripts/gazebo.material</uri>-->
+<!--            </script>-->
+<!--          </material>-->
+<!--        </visual>-->
+<!--        <visual name='robot_footprint_fixed_joint_lump__back_caster_visual_visual_1'>-->
+<!--          <pose>-0.3 0 -0.1 0 -0 0</pose>-->
+<!--          <geometry>-->
+<!--            <sphere>-->
+<!--              <radius>0.1</radius>-->
+<!--            </sphere>-->
+<!--          </geometry>-->
+<!--        </visual>-->
+<!--        <visual name='robot_footprint_fixed_joint_lump__front_caster_visual_visual_2'>-->
+<!--          <pose>0.3 0 -0.1 0 -0 0</pose>-->
+<!--          <geometry>-->
+<!--            <sphere>-->
+<!--              <radius>0.1</radius>-->
+<!--            </sphere>-->
+<!--          </geometry>-->
+<!--        </visual>-->
+<!--        <visual name='robot_footprint_fixed_joint_lump__camera_visual_visual_3'>-->
+<!--          <pose>0.4 0 0 0 -0 0</pose>-->
+<!--          <geometry>-->
+<!--            <box>-->
+<!--              <size>0.05 0.05 0.05</size>-->
+<!--            </box>-->
+<!--          </geometry>-->
+<!--          <material>-->
+<!--            <script>-->
+<!--              <name>Gazebo/Blue</name>-->
+<!--              <uri>file://media/materials/scripts/gazebo.material</uri>-->
+<!--            </script>-->
+<!--          </material>-->
+<!--        </visual>-->
+<!--        <visual name='robot_footprint_fixed_joint_lump__hokuyo_visual_visual_4'>-->
+<!--          <pose>0.15 0 0.1 0 -0 0</pose>-->
+<!--          <geometry>-->
+<!--            <mesh>-->
+<!--              <scale>1 1 1</scale>-->
+<!--              <uri>/home/nagy/Desktop/software_engineering_robotics_Udacity/projects/catkin_ws_chase_ball/src/av_robot/meshes/hokuyo.dae</uri>-->
+<!--            </mesh>-->
+<!--          </geometry>-->
+<!--        </visual>-->
+<!--        <sensor name='camera1' type='camera'>-->
+<!--          <update_rate>30</update_rate>-->
+<!--          <camera name='head'>-->
+<!--            <horizontal_fov>1.39626</horizontal_fov>-->
+<!--            <image>-->
+<!--              <width>800</width>-->
+<!--              <height>800</height>-->
+<!--              <format>R8G8B8</format>-->
+<!--            </image>-->
+<!--            <clip>-->
+<!--              <near>0.02</near>-->
+<!--              <far>300</far>-->
+<!--            </clip>-->
+<!--          </camera>-->
+<!--          <plugin name='camera_controller' filename='libgazebo_ros_camera.so'>-->
+<!--            <alwaysOn>1</alwaysOn>-->
+<!--            <updateRate>0.0</updateRate>-->
+<!--            <cameraName>camera</cameraName>-->
+<!--            <imageTopicName>rgb/image_raw</imageTopicName>-->
+<!--            <cameraInfoTopicName>rgb/camera_info</cameraInfoTopicName>-->
+<!--            <frameName>camera</frameName>-->
+<!--            <hackBaseline>0.07</hackBaseline>-->
+<!--            <distortionK1>0.0</distortionK1>-->
+<!--            <distortionK2>0.0</distortionK2>-->
+<!--            <distortionK3>0.0</distortionK3>-->
+<!--            <distortionT1>0.0</distortionT1>-->
+<!--            <distortionT2>0.0</distortionT2>-->
+<!--            <robotNamespace>/</robotNamespace>-->
+<!--          </plugin>-->
+<!--          <pose>0.4 0 0 0 -0 0</pose>-->
+<!--        </sensor>-->
+<!--        <sensor name='head_hokuyo_sensor' type='ray'>-->
+<!--          <visualize>0</visualize>-->
+<!--          <update_rate>40</update_rate>-->
+<!--          <ray>-->
+<!--            <scan>-->
+<!--              <horizontal>-->
+<!--                <samples>720</samples>-->
+<!--                <resolution>1</resolution>-->
+<!--                <min_angle>-1.5708</min_angle>-->
+<!--                <max_angle>1.5708</max_angle>-->
+<!--              </horizontal>-->
+<!--              <vertical>-->
+<!--                <samples>1</samples>-->
+<!--                <min_angle>0</min_angle>-->
+<!--                <max_angle>0</max_angle>-->
+<!--              </vertical>-->
+<!--            </scan>-->
+<!--            <range>-->
+<!--              <min>0.1</min>-->
+<!--              <max>30</max>-->
+<!--              <resolution>0.01</resolution>-->
+<!--            </range>-->
+<!--            <noise>-->
+<!--              <type>gaussian</type>-->
+<!--              <mean>0</mean>-->
+<!--              <stddev>0.01</stddev>-->
+<!--            </noise>-->
+<!--          </ray>-->
+<!--          <plugin name='gazebo_ros_head_hokuyo_controller' filename='libgazebo_ros_laser.so'>-->
+<!--            <topicName>/scan</topicName>-->
+<!--            <frameName>hokuyo</frameName>-->
+<!--            <robotNamespace>/</robotNamespace>-->
+<!--          </plugin>-->
+<!--          <pose>0.15 0 0.1 0 -0 0</pose>-->
+<!--        </sensor>-->
+<!--        <self_collide>0</self_collide>-->
+<!--        <enable_wind>0</enable_wind>-->
+<!--        <kinematic>0</kinematic>-->
+<!--      </link>-->
+<!--      <joint name='left_wheel_hinge' type='revolute'>-->
+<!--        <pose relative_to='robot_footprint'>0 0.3 0 0 -0 0</pose>-->
+<!--        <parent>robot_footprint</parent>-->
+<!--        <child>left_wheel</child>-->
+<!--        <axis>-->
+<!--          <xyz>0 1 0</xyz>-->
+<!--          <limit>-->
+<!--            <effort>10000</effort>-->
+<!--            <velocity>1000</velocity>-->
+<!--            <lower>-1e+16</lower>-->
+<!--            <upper>1e+16</upper>-->
+<!--          </limit>-->
+<!--          <dynamics>-->
+<!--            <damping>1</damping>-->
+<!--            <friction>1</friction>-->
+<!--            <spring_reference>0</spring_reference>-->
+<!--            <spring_stiffness>0</spring_stiffness>-->
+<!--          </dynamics>-->
+<!--        </axis>-->
+<!--      </joint>-->
+<!--      <link name='left_wheel'>-->
+<!--        <pose relative_to='left_wheel_hinge'>0 0 0 0 -0 0</pose>-->
+<!--        <inertial>-->
+<!--          <pose>0 0 0 -0 1.5707 1.5707</pose>-->
+<!--          <mass>0.5</mass>-->
+<!--          <inertia>-->
+<!--            <ixx>0.1</ixx>-->
+<!--            <ixy>0</ixy>-->
+<!--            <ixz>0</ixz>-->
+<!--            <iyy>0.1</iyy>-->
+<!--            <iyz>0</iyz>-->
+<!--            <izz>0.1</izz>-->
+<!--          </inertia>-->
+<!--        </inertial>-->
+<!--        <collision name='left_wheel_collision_collision'>-->
+<!--          <pose>0 0 0 1.57089 1.57079 -3.14159</pose>-->
+<!--          <geometry>-->
+<!--            <cylinder>-->
+<!--              <length>0.05</length>-->
+<!--              <radius>0.2</radius>-->
+<!--            </cylinder>-->
+<!--          </geometry>-->
+<!--          <surface>-->
+<!--            <contact>-->
+<!--              <ode/>-->
+<!--            </contact>-->
+<!--            <friction>-->
+<!--              <ode/>-->
+<!--              <torsional>-->
+<!--                <ode/>-->
+<!--              </torsional>-->
+<!--            </friction>-->
+<!--            <bounce/>-->
+<!--          </surface>-->
+<!--          <max_contacts>10</max_contacts>-->
+<!--        </collision>-->
+<!--        <visual name='left_wheel_visual_visual'>-->
+<!--          <pose>0 0 0 1.57089 1.57079 -3.14159</pose>-->
+<!--          <geometry>-->
+<!--            <cylinder>-->
+<!--              <length>0.05</length>-->
+<!--              <radius>0.2</radius>-->
+<!--            </cylinder>-->
+<!--          </geometry>-->
+<!--          <material>-->
+<!--            <script>-->
+<!--              <name>Gazebo/Orange</name>-->
+<!--              <uri>file://media/materials/scripts/gazebo.material</uri>-->
+<!--            </script>-->
+<!--          </material>-->
+<!--        </visual>-->
+<!--        <self_collide>0</self_collide>-->
+<!--        <enable_wind>0</enable_wind>-->
+<!--        <kinematic>0</kinematic>-->
+<!--      </link>-->
+<!--      <joint name='right_wheel_hinge' type='revolute'>-->
+<!--        <pose relative_to='robot_footprint'>0 -0.3 0 0 -0 0</pose>-->
+<!--        <parent>robot_footprint</parent>-->
+<!--        <child>right_wheel</child>-->
+<!--        <axis>-->
+<!--          <xyz>0 1 0</xyz>-->
+<!--          <limit>-->
+<!--            <effort>10000</effort>-->
+<!--            <velocity>1000</velocity>-->
+<!--            <lower>-1e+16</lower>-->
+<!--            <upper>1e+16</upper>-->
+<!--          </limit>-->
+<!--          <dynamics>-->
+<!--            <damping>1</damping>-->
+<!--            <friction>1</friction>-->
+<!--            <spring_reference>0</spring_reference>-->
+<!--            <spring_stiffness>0</spring_stiffness>-->
+<!--          </dynamics>-->
+<!--        </axis>-->
+<!--      </joint>-->
+<!--      <link name='right_wheel'>-->
+<!--        <pose relative_to='right_wheel_hinge'>0 0 0 0 -0 0</pose>-->
+<!--        <inertial>-->
+<!--          <pose>0 0 0 -0 1.5707 1.5707</pose>-->
+<!--          <mass>0.5</mass>-->
+<!--          <inertia>-->
+<!--            <ixx>0.1</ixx>-->
+<!--            <ixy>0</ixy>-->
+<!--            <ixz>0</ixz>-->
+<!--            <iyy>0.1</iyy>-->
+<!--            <iyz>0</iyz>-->
+<!--            <izz>0.1</izz>-->
+<!--          </inertia>-->
+<!--        </inertial>-->
+<!--        <collision name='right_wheel_collision_collision'>-->
+<!--          <pose>0 0 0 1.57089 1.57079 -3.14159</pose>-->
+<!--          <geometry>-->
+<!--            <cylinder>-->
+<!--              <length>0.05</length>-->
+<!--              <radius>0.2</radius>-->
+<!--            </cylinder>-->
+<!--          </geometry>-->
+<!--          <surface>-->
+<!--            <contact>-->
+<!--              <ode/>-->
+<!--            </contact>-->
+<!--            <friction>-->
+<!--              <ode/>-->
+<!--              <torsional>-->
+<!--                <ode/>-->
+<!--              </torsional>-->
+<!--            </friction>-->
+<!--            <bounce/>-->
+<!--          </surface>-->
+<!--          <max_contacts>10</max_contacts>-->
+<!--        </collision>-->
+<!--        <visual name='right_wheel_visual_visual'>-->
+<!--          <pose>0 0 0 1.57089 1.57079 -3.14159</pose>-->
+<!--          <geometry>-->
+<!--            <cylinder>-->
+<!--              <length>0.05</length>-->
+<!--              <radius>0.2</radius>-->
+<!--            </cylinder>-->
+<!--          </geometry>-->
+<!--          <material>-->
+<!--            <script>-->
+<!--              <name>Gazebo/Orange</name>-->
+<!--              <uri>file://media/materials/scripts/gazebo.material</uri>-->
+<!--            </script>-->
+<!--          </material>-->
+<!--        </visual>-->
+<!--        <self_collide>0</self_collide>-->
+<!--        <enable_wind>0</enable_wind>-->
+<!--        <kinematic>0</kinematic>-->
+<!--      </link>-->
+<!--      <plugin name='differential_drive_controller' filename='libgazebo_ros_diff_drive.so'>-->
+<!--        <legacyMode>0</legacyMode>-->
+<!--        <alwaysOn>1</alwaysOn>-->
+<!--        <updateRate>10</updateRate>-->
+<!--        <leftJoint>left_wheel_hinge</leftJoint>-->
+<!--        <rightJoint>right_wheel_hinge</rightJoint>-->
+<!--        <wheelSeparation>0.4</wheelSeparation>-->
+<!--        <wheelDiameter>0.2</wheelDiameter>-->
+<!--        <torque>10</torque>-->
+<!--        <commandTopic>cmd_vel</commandTopic>-->
+<!--        <odometryTopic>odom</odometryTopic>-->
+<!--        <odometryFrame>odom</odometryFrame>-->
+<!--        <robotBaseFrame>robot_footprint</robotBaseFrame>-->
+<!--        <publishWheelTF>0</publishWheelTF>-->
+<!--        <publishWheelJointState>0</publishWheelJointState>-->
+<!--        <rosDebugLevel>na</rosDebugLevel>-->
+<!--        <wheelAcceleration>0</wheelAcceleration>-->
+<!--        <wheelTorque>5</wheelTorque>-->
+<!--        <odometrySource>world</odometrySource>-->
+<!--        <publishTf>1</publishTf>-->
+<!--        <publishOdomTF>1</publishOdomTF>-->
+<!--        <robotNamespace>/</robotNamespace>-->
+<!--      </plugin>-->
+<!--      <frame name='camera_joint' attached_to='chassis'>-->
+<!--        <pose>0.4 0 0 0 -0 0</pose>-->
+<!--      </frame>-->
+<!--      <frame name='camera' attached_to='camera_joint'/>-->
+<!--      <frame name='hokuyo_joint' attached_to='chassis'>-->
+<!--        <pose>0.15 0 0.1 0 -0 0</pose>-->
+<!--      </frame>-->
+<!--      <frame name='hokuyo' attached_to='hokuyo_joint'/>-->
+<!--      <frame name='robot_footprint_joint' attached_to='robot_footprint'>-->
+<!--        <pose>0 0 0 0 -0 0</pose>-->
+<!--      </frame>-->
+<!--      <frame name='chassis' attached_to='robot_footprint_joint'/>-->
+<!--      <pose>0 0 0 0 -0 0</pose>-->
+<!--    </model>-->
     <model name='white_ball'>
       <link name='link_0'>
         <inertial>

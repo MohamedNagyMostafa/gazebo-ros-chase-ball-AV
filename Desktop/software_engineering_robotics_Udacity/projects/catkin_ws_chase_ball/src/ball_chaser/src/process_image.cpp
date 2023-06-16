@@ -21,35 +21,33 @@ void processImageCallback(const sensor_msgs::Image image)
 {
     int whitePixel  = 255;
 
+    int numberOfChannels            = image.step/image.width;
     int leftMovementTolerance       = image.width/3;
     int forwardMovementTolerance    = leftMovementTolerance + image.width/3;
 
     std::vector<int8_t> directionDecision = {0, 0, 0};
     int maxDirectionPro = -1;
 
-    for(int i =0; i < image.height; i++)
-    {
-        for(int j=0; j < image.width; j++)
-        {
-            int pixelValue  = image.data[i * image.step + (j * image.step/image.width)];
-            if(pixelValue == whitePixel)
-            {
-                if(j < leftMovementTolerance)
-                {
-                    directionDecision[0]++;
-                    maxDirectionPro = (directionDecision[0] > maxDirectionPro)? 0 : maxDirectionPro;
-                }
 
-                else if(j < forwardMovementTolerance)
-                {
-                    directionDecision[1]++;
-                    maxDirectionPro = (directionDecision[1] > maxDirectionPro)? 1 : maxDirectionPro;
-                }
-                else
-                {
-                    directionDecision[2]++;
-                    maxDirectionPro = (directionDecision[2] > maxDirectionPro)? 2 : maxDirectionPro;
-                }
+    for(int i =0; i < image.height * image.width * numberOfChannels; i+=3) {
+        int redChannel = image.data[i];
+        int greenChannel = image.data[i + 1];
+        int blueChannel = image.data[i + 2];
+
+        bool isWhitePixel = (redChannel == whitePixel && greenChannel == whitePixel && blueChannel == whitePixel);
+
+        if (isWhitePixel) {
+
+            int imageSegmentLocation = (i % (image.width * numberOfChannels)) / numberOfChannels;
+            if (imageSegmentLocation <= leftMovementTolerance) {
+                directionDecision[0]++;
+                maxDirectionPro = (directionDecision[0] > maxDirectionPro) ? 0 : maxDirectionPro;
+            } else if (imageSegmentLocation <= forwardMovementTolerance) {
+                directionDecision[1]++;
+                maxDirectionPro = (directionDecision[1] > maxDirectionPro) ? 1 : maxDirectionPro;
+            } else {
+                directionDecision[2]++;
+                maxDirectionPro = (directionDecision[2] > maxDirectionPro) ? 2 : maxDirectionPro;
             }
         }
     }

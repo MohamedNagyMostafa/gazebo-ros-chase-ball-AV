@@ -15,8 +15,6 @@ bool handleDriveRequestCallback(ball_chaser::DriveToTarget::Request& request,
 
     motorCommandPublisher.publish(velocity);
 
-    ros::Duration(2).sleep();
-
     response.msg_feedback   = "The robot moves with a linear velocity: "+  std::to_string(request.linear_x) +" and an angular velocity:" + std::to_string(request.angular_z);
 
     return true;
